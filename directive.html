@@ -1,0 +1,12 @@
+
+<div  style="margin-top:100px;" class="error" ng-if="list.isEmpty()">Nothing found</div>
+<br><br><br><ul>
+  <li ng-repeat="item in list.found">
+   <strong> {{item.name }} </strong> / <em>{{item.short_name}} </em>/ {{item.description}}
+    <button ng-click="list.onRemove({index: $index});">Remove It!</button>
+  </li>
+</ul>
+
+
+	
+
